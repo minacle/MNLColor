@@ -441,7 +441,7 @@ MNLColorSpace MNLColorSpaceForCGColorSpaceName(CFStringRef);
 
 - (void)encodeWithCoder:(NSCoder *)coder {
     CGColorSpaceRef cgColorSpace = CGColorGetColorSpace(_color);
-    CFStringRef cgColorSpaceName = CGColorSpaceGetName(cgColorSpace);
+    CFStringRef cgColorSpaceName = CGColorSpaceCopyName(cgColorSpace);
     MNLColorSpace colorSpace = MNLColorSpaceForCGColorSpaceName(cgColorSpaceName);
     CFRelease(cgColorSpaceName);
     size_t len = sizeof(CGFloat) * CGColorGetNumberOfComponents(_color);
