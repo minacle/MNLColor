@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "661468072136F72F00EC4009"
-               BuildableName = "MNLColor.macOS.framework"
+               BuildableName = "MNLColor.framework"
                BlueprintName = "MNLColor.macOS"
                ReferencedContainer = "container:MNLColor.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "661468072136F72F00EC4009"
-            BuildableName = "MNLColor.macOS.framework"
+            BuildableName = "MNLColor.framework"
             BlueprintName = "MNLColor.macOS"
             ReferencedContainer = "container:MNLColor.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "661468072136F72F00EC4009"
-            BuildableName = "MNLColor.macOS.framework"
+            BuildableName = "MNLColor.framework"
             BlueprintName = "MNLColor.macOS"
             ReferencedContainer = "container:MNLColor.xcodeproj">
          </BuildableReference>
