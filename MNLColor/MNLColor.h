@@ -202,17 +202,17 @@ typedef struct {
 /// @brief
 ///  A color palette for 8 real colors.
 /// @note
-///  Every colors are in SRGB color space.
+///  Every colors are in sRGB color space.
 @interface MNL3BitColorPalette : MNLColorPalette
 
-@property (class, nonatomic, readonly, nonnull) MNLColor *blackColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *redColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *greenColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *blueColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *yellowColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *magentaColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *cyanColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *whiteColor;
+@property (class, nonatomic, readonly, nonnull) MNLColor *blackColor NS_SWIFT_NAME(black);
+@property (class, nonatomic, readonly, nonnull) MNLColor *redColor NS_SWIFT_NAME(red);
+@property (class, nonatomic, readonly, nonnull) MNLColor *greenColor NS_SWIFT_NAME(green);
+@property (class, nonatomic, readonly, nonnull) MNLColor *blueColor NS_SWIFT_NAME(blue);
+@property (class, nonatomic, readonly, nonnull) MNLColor *yellowColor NS_SWIFT_NAME(yellow);
+@property (class, nonatomic, readonly, nonnull) MNLColor *magentaColor NS_SWIFT_NAME(magenta);
+@property (class, nonatomic, readonly, nonnull) MNLColor *cyanColor NS_SWIFT_NAME(cyan);
+@property (class, nonatomic, readonly, nonnull) MNLColor *whiteColor NS_SWIFT_NAME(white);
 
 @end
 
@@ -223,17 +223,17 @@ typedef struct {
 ///  A color palette for colors which introduced on iOS Human Interface
 ///  Guideline.
 /// @note
-///  Every colors are in SRGB color space.
+///  Every colors are in sRGB color space.
 @interface MNLIOSColorPalette : MNLColorPalette
 
-@property (class, nonatomic, readonly, nonnull) MNLColor *redColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *orangeColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *yellowColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *greenColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *tealBlueColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *blueColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *purpleColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *pinkColor;
+@property (class, nonatomic, readonly, nonnull) MNLColor *redColor NS_SWIFT_NAME(red);
+@property (class, nonatomic, readonly, nonnull) MNLColor *orangeColor NS_SWIFT_NAME(orange);
+@property (class, nonatomic, readonly, nonnull) MNLColor *yellowColor NS_SWIFT_NAME(yellow);
+@property (class, nonatomic, readonly, nonnull) MNLColor *greenColor NS_SWIFT_NAME(green);
+@property (class, nonatomic, readonly, nonnull) MNLColor *tealBlueColor NS_SWIFT_NAME(tealBlue);
+@property (class, nonatomic, readonly, nonnull) MNLColor *blueColor NS_SWIFT_NAME(blue);
+@property (class, nonatomic, readonly, nonnull) MNLColor *purpleColor NS_SWIFT_NAME(purple);
+@property (class, nonatomic, readonly, nonnull) MNLColor *pinkColor NS_SWIFT_NAME(pink);
 
 @end
 
@@ -244,18 +244,18 @@ typedef struct {
 ///  A color palette for colors which introduced on macOS Human Interface
 ///  Guideline.
 /// @note
-///  Every colors are in SRGB color space.
+///  Every colors are in sRGB color space.
 @interface MNLMacOSColorPalette : MNLColorPalette
 
-@property (class, nonatomic, readonly, nonnull) MNLColor *blueColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *brownColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *grayColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *greenColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *orangeColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *pinkColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *purpleColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *redColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *yellowColor;
+@property (class, nonatomic, readonly, nonnull) MNLColor *blueColor NS_SWIFT_NAME(blue);
+@property (class, nonatomic, readonly, nonnull) MNLColor *brownColor NS_SWIFT_NAME(brown);
+@property (class, nonatomic, readonly, nonnull) MNLColor *grayColor NS_SWIFT_NAME(gray);
+@property (class, nonatomic, readonly, nonnull) MNLColor *greenColor NS_SWIFT_NAME(green);
+@property (class, nonatomic, readonly, nonnull) MNLColor *orangeColor NS_SWIFT_NAME(orange);
+@property (class, nonatomic, readonly, nonnull) MNLColor *pinkColor NS_SWIFT_NAME(pink);
+@property (class, nonatomic, readonly, nonnull) MNLColor *purpleColor NS_SWIFT_NAME(purple);
+@property (class, nonatomic, readonly, nonnull) MNLColor *redColor NS_SWIFT_NAME(red);
+@property (class, nonatomic, readonly, nonnull) MNLColor *yellowColor NS_SWIFT_NAME(yellow);
 
 @end
 
@@ -266,29 +266,29 @@ typedef struct {
 ///  A color palette for colors which introduced on watchOS Human Interface
 ///  Guideline.
 /// @note
-///  Every colors are in SRGB color space.
+///  Every colors are in sRGB color space.
 @interface MNLWatchOSColorPalette : MNLColorPalette
 
-@property (class, nonatomic, readonly, nonnull) MNLColor *pinkColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *redColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *orangeColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *yellowColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *greenColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *seafoamColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *lightBlueColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *blueColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *purpleColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *whiteColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *mutedPinkColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *mutedRedColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *mutedOrangeColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *mutedYellowColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *mutedGreenColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *mutedSeafoamColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *mutedLightBlueColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *mutedBlueColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *mutedPurpleColor;
-@property (class, nonatomic, readonly, nonnull) MNLColor *mutedWhiteColor;
+@property (class, nonatomic, readonly, nonnull) MNLColor *pinkColor NS_SWIFT_NAME(pink);
+@property (class, nonatomic, readonly, nonnull) MNLColor *redColor NS_SWIFT_NAME(red);
+@property (class, nonatomic, readonly, nonnull) MNLColor *orangeColor NS_SWIFT_NAME(orange);
+@property (class, nonatomic, readonly, nonnull) MNLColor *yellowColor NS_SWIFT_NAME(yellow);
+@property (class, nonatomic, readonly, nonnull) MNLColor *greenColor NS_SWIFT_NAME(green);
+@property (class, nonatomic, readonly, nonnull) MNLColor *seafoamColor NS_SWIFT_NAME(seafoam);
+@property (class, nonatomic, readonly, nonnull) MNLColor *lightBlueColor NS_SWIFT_NAME(lightBlue);
+@property (class, nonatomic, readonly, nonnull) MNLColor *blueColor NS_SWIFT_NAME(blue);
+@property (class, nonatomic, readonly, nonnull) MNLColor *purpleColor NS_SWIFT_NAME(purple);
+@property (class, nonatomic, readonly, nonnull) MNLColor *whiteColor NS_SWIFT_NAME(white);
+@property (class, nonatomic, readonly, nonnull) MNLColor *mutedPinkColor NS_SWIFT_NAME(mutedPink);
+@property (class, nonatomic, readonly, nonnull) MNLColor *mutedRedColor NS_SWIFT_NAME(mutedRed);
+@property (class, nonatomic, readonly, nonnull) MNLColor *mutedOrangeColor NS_SWIFT_NAME(mutedOrange);
+@property (class, nonatomic, readonly, nonnull) MNLColor *mutedYellowColor NS_SWIFT_NAME(mutedYellow);
+@property (class, nonatomic, readonly, nonnull) MNLColor *mutedGreenColor NS_SWIFT_NAME(mutedGreen);
+@property (class, nonatomic, readonly, nonnull) MNLColor *mutedSeafoamColor NS_SWIFT_NAME(mutedSeafoam);
+@property (class, nonatomic, readonly, nonnull) MNLColor *mutedLightBlueColor NS_SWIFT_NAME(mutedLightBlue);
+@property (class, nonatomic, readonly, nonnull) MNLColor *mutedBlueColor NS_SWIFT_NAME(mutedBlue);
+@property (class, nonatomic, readonly, nonnull) MNLColor *mutedPurpleColor NS_SWIFT_NAME(mutedPurple);
+@property (class, nonatomic, readonly, nonnull) MNLColor *mutedWhiteColor NS_SWIFT_NAME(mutedWhite);
 
 @end
 
