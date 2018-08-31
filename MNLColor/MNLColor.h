@@ -3,37 +3,37 @@
 
 typedef NS_ENUM(NSInteger, MNLColorSpace) {
     // 10.0
-    MNLColorSpaceDeviceGray = NSIntegerMin,
-    MNLColorSpaceDeviceRGB,
-    MNLColorSpaceDeviceCMYK,
+    MNLColorSpaceDeviceGray NS_SWIFT_NAME(deviceGray) = NSIntegerMin,
+    MNLColorSpaceDeviceRGB NS_SWIFT_NAME(deviceRGB),
+    MNLColorSpaceDeviceCMYK NS_SWIFT_NAME(deviceCMYK),
     //
-    MNLColorSpaceUnknown = -1,
+    MNLColorSpaceUnknown NS_SWIFT_NAME(unknown) = -1,
     // 10.4
-    MNLColorSpaceGenericGray,
-    MNLColorSpaceGenericRGB,
-    MNLColorSpaceGenericCMYK,
+    MNLColorSpaceGenericGray NS_SWIFT_NAME(gray),
+    MNLColorSpaceGenericRGB NS_SWIFT_NAME(rgb),
+    MNLColorSpaceGenericCMYK NS_SWIFT_NAME(cmyk),
     // 10.5
-    MNLColorSpaceGenericRGBLinear,
-    MNLColorSpaceAdobeRGB1998,
-    MNLColorSpaceSRGB,
+    MNLColorSpaceGenericRGBLinear NS_SWIFT_NAME(rgbLinear),
+    MNLColorSpaceAdobeRGB1998 NS_SWIFT_NAME(rgb1998),
+    MNLColorSpaceSRGB NS_SWIFT_NAME(sRGB),
     // 10.6
-    MNLColorSpaceGenericGrayGamma2_2,
+    MNLColorSpaceGenericGrayGamma2_2 NS_SWIFT_NAME(genericGrayGamma22),
     // 10.11
-    MNLColorSpaceGenericXYZ,
-    MNLColorSpaceACESCGLinear,
-    MNLColorSpaceITUR_709,
-    MNLColorSpaceITUR_2020,
-    MNLColorSpaceROMMRGB,
-    MNLColorSpaceDCIP3,
+    MNLColorSpaceGenericXYZ NS_SWIFT_NAME(genericXYZ),
+    MNLColorSpaceACESCGLinear NS_SWIFT_NAME(asescgLinear),
+    MNLColorSpaceITUR_709 NS_SWIFT_NAME(itur709),
+    MNLColorSpaceITUR_2020 NS_SWIFT_NAME(itur2020),
+    MNLColorSpaceROMMRGB NS_SWIFT_NAME(rommRGB),
+    MNLColorSpaceDCIP3 NS_SWIFT_NAME(dciP3),
     // 10.11.2
-    MNLColorSpaceDisplayP3,
+    MNLColorSpaceDisplayP3 NS_SWIFT_NAME(displayP3),
     // 10.12
-    MNLColorSpaceLinearGray,
-    MNLColorSpaceExtendedSRGB,
-    MNLColorSpaceLinearSRGB,
-    MNLColorSpaceExtendedLinearSRGB,
-    MNLColorSpaceExtendedGray,
-    MNLColorSpaceExtendedLinearGray,
+    MNLColorSpaceLinearGray NS_SWIFT_NAME(linearGray),
+    MNLColorSpaceExtendedSRGB NS_SWIFT_NAME(extendedSRGB),
+    MNLColorSpaceLinearSRGB NS_SWIFT_NAME(linearSRGB),
+    MNLColorSpaceExtendedLinearSRGB NS_SWIFT_NAME(extendedLinearSRGB),
+    MNLColorSpaceExtendedGray NS_SWIFT_NAME(extendedGray),
+    MNLColorSpaceExtendedLinearGray NS_SWIFT_NAME(extendedLinearGray),
 };
 
 typedef struct {
@@ -96,18 +96,18 @@ typedef struct {
 - (instancetype _Nullable)initWithWhite:(CGFloat)white colorSpace:(MNLColorSpace)colorSpace;
 - (instancetype _Nullable)initWithWhite:(CGFloat)white alpha:(CGFloat)alpha;
 - (instancetype _Nullable)initWithWhite:(CGFloat)white;
-- (instancetype _Nullable)initWithHexadecimalWhite:(NSInteger)white alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace;
-- (instancetype _Nullable)initWithHexadecimalWhite:(NSInteger)white colorSpace:(MNLColorSpace)colorSpace;
-- (instancetype _Nullable)initWithHexadecimalWhite:(NSInteger)white alpha:(CGFloat)alpha;
-- (instancetype _Nullable)initWithHexadecimalWhite:(NSInteger)white;
+- (instancetype _Nullable)initWithHexadecimalWhite:(NSInteger)white alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace NS_SWIFT_NAME(init(white:alpha:colorSpace:));
+- (instancetype _Nullable)initWithHexadecimalWhite:(NSInteger)white colorSpace:(MNLColorSpace)colorSpace NS_SWIFT_NAME(init(white:colorSpace:));
+- (instancetype _Nullable)initWithHexadecimalWhite:(NSInteger)white alpha:(CGFloat)alpha NS_SWIFT_NAME(init(white:alpha:));
+- (instancetype _Nullable)initWithHexadecimalWhite:(NSInteger)white NS_SWIFT_NAME(init(white:));
 - (instancetype _Nullable)initWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace;
 - (instancetype _Nullable)initWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue colorSpace:(MNLColorSpace)colorSpace;
 - (instancetype _Nullable)initWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
 - (instancetype _Nullable)initWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue;
-- (instancetype _Nullable)initWithHexadecimalRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace;
-- (instancetype _Nullable)initWithHexadecimalRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue colorSpace:(MNLColorSpace)colorSpace;
-- (instancetype _Nullable)initWithHexadecimalRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(CGFloat)alpha;
-- (instancetype _Nullable)initWithHexadecimalRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue;
+- (instancetype _Nullable)initWithHexadecimalRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace NS_SWIFT_NAME(init(red:blue:green:alpha:colorSpace:));
+- (instancetype _Nullable)initWithHexadecimalRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue colorSpace:(MNLColorSpace)colorSpace NS_SWIFT_NAME(init(red:blue:green:colorSpace:));
+- (instancetype _Nullable)initWithHexadecimalRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(CGFloat)alpha NS_SWIFT_NAME(init(red:blue:green:alpha:));
+- (instancetype _Nullable)initWithHexadecimalRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue NS_SWIFT_NAME(init(red:blue:green:));
 - (instancetype _Nullable)initWithCyan:(CGFloat)cyan magenta:(CGFloat)magenta yellow:(CGFloat)yellow black:(CGFloat)black alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace;
 - (instancetype _Nullable)initWithCyan:(CGFloat)cyan magenta:(CGFloat)magenta yellow:(CGFloat)yellow black:(CGFloat)black colorSpace:(MNLColorSpace)colorSpace;
 - (instancetype _Nullable)initWithCyan:(CGFloat)cyan magenta:(CGFloat)magenta yellow:(CGFloat)yellow black:(CGFloat)black alpha:(CGFloat)alpha;
