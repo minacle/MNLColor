@@ -66,6 +66,22 @@ MNLColorSpace MNLColorSpaceForCGColorSpaceName(CFStringRef);
     return [(MNLColor *)[self alloc] initWithWhite:white];
 }
 
++ (MNLColor *)colorWithHexadecimalWhite:(NSInteger)white alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace {
+    return [(MNLColor *)[self alloc] initWithHexadecimalWhite:white alpha:alpha colorSpace:colorSpace];
+}
+
++ (MNLColor *)colorWithHexadecimalWhite:(NSInteger)white colorSpace:(MNLColorSpace)colorSpace {
+    return [(MNLColor *)[self alloc] initWithHexadecimalWhite:white colorSpace:colorSpace];
+}
+
++ (MNLColor *)colorWithHexadecimalWhite:(NSInteger)white alpha:(CGFloat)alpha {
+    return [(MNLColor *)[self alloc] initWithHexadecimalWhite:white alpha:alpha];
+}
+
++ (MNLColor *)colorWithHexadecimalWhite:(NSInteger)white {
+    return [(MNLColor *)[self alloc] initWithHexadecimalWhite:white];
+}
+
 + (MNLColor *)colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace {
     return [(MNLColor *)[self alloc] initWithRed:red green:green blue:blue alpha:alpha colorSpace:colorSpace];
 }

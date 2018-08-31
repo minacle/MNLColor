@@ -73,6 +73,10 @@ typedef struct {
 + (MNLColor *_Nullable)colorWithWhite:(CGFloat)white colorSpace:(MNLColorSpace)colorSpace;
 + (MNLColor *_Nullable)colorWithWhite:(CGFloat)white alpha:(CGFloat)alpha;
 + (MNLColor *_Nullable)colorWithWhite:(CGFloat)white;
++ (MNLColor *_Nullable)colorWithHexadecimalWhite:(NSInteger)white alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace;
++ (MNLColor *_Nullable)colorWithHexadecimalWhite:(NSInteger)white colorSpace:(MNLColorSpace)colorSpace;
++ (MNLColor *_Nullable)colorWithHexadecimalWhite:(NSInteger)white alpha:(CGFloat)alpha;
++ (MNLColor *_Nullable)colorWithHexadecimalWhite:(NSInteger)white;
 + (MNLColor *_Nullable)colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace;
 + (MNLColor *_Nullable)colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue colorSpace:(MNLColorSpace)colorSpace;
 + (MNLColor *_Nullable)colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
