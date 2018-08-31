@@ -47,7 +47,7 @@ MNLColorSpace MNLColorSpaceForCGColorSpaceName(CFStringRef);
 }
 
 + (MNLColor *)clearColor {
-    MNLReturnSingletonColor([[MNLColor alloc] initWithRed:0 green:0 blue:0 alpha:0], MNLClearColor);
+    MNLReturnSingletonColor([[MNLColor alloc] init], MNLClearColor);
 }
 
 + (MNLColor *)colorWithWhite:(CGFloat)white alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace {
@@ -157,6 +157,15 @@ MNLColorSpace MNLColorSpaceForCGColorSpaceName(CFStringRef);
     CGColorSpaceModel cgColorSpaceModel = CGColorSpaceGetModel(cgColorSpace);
     CGColorSpaceRelease(cgColorSpace);
     return cgColorSpaceModel == kCGColorSpaceModelCMYK;
+}
+
+- (instancetype)init {
+    CGColorSpaceRef cgColorSpace = CGColorSpaceCreateDeviceGray();
+    CGFloat components[] = {0, 0};
+    if (self = [super init])
+        _color = CGColorCreate(cgColorSpace, components);
+    CGColorSpaceRelease(cgColorSpace);
+    return self;
 }
 
 - (instancetype)initWithWhite:(CGFloat)white alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace {

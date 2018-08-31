@@ -96,6 +96,7 @@ typedef struct {
 @property (nonatomic, readonly) BOOL isRGB;
 @property (nonatomic, readonly) BOOL isCMYK;
 
+- (instancetype _Nonnull)init;
 - (instancetype _Nullable)initWithWhite:(CGFloat)white alpha:(CGFloat)alpha colorSpace:(MNLColorSpace)colorSpace;
 - (instancetype _Nullable)initWithWhite:(CGFloat)white colorSpace:(MNLColorSpace)colorSpace;
 - (instancetype _Nullable)initWithWhite:(CGFloat)white alpha:(CGFloat)alpha;
@@ -118,9 +119,9 @@ typedef struct {
 - (instancetype _Nullable)initWithCyan:(CGFloat)cyan magenta:(CGFloat)magenta yellow:(CGFloat)yellow black:(CGFloat)black;
 - (instancetype _Nullable)initWithColorSpace:(MNLColorSpace)colorSpace, ...;
 - (instancetype _Nonnull)initWithCGColor:(CGColorRef _Nonnull)cgColor;
-- (BOOL)monochromeColorComponents:(MNLMonochromeColorComponents *)components;
-- (BOOL)RGBColorComponents:(MNLRGBColorComponents *)components;
-- (BOOL)CMYKColorComponents:(MNLCMYKColorComponents *)components;
+- (BOOL)monochromeColorComponents:(MNLMonochromeColorComponents *_Nonnull)components;
+- (BOOL)RGBColorComponents:(MNLRGBColorComponents *_Nonnull)components;
+- (BOOL)CMYKColorComponents:(MNLCMYKColorComponents *_Nonnull)components;
 
 @end
 
