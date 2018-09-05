@@ -233,7 +233,7 @@ MNLColorSpace MNLColorSpaceForCGColorSpaceName(CFStringRef);
         CGColorSpaceRelease(cgColorSpace);
         return self = nil;
     }
-    CGFloat components[] = {(CGFloat)white / 255, alpha};
+    CGFloat components[] = {white / (CGFloat)255, alpha};
     if (self = [super init])
         _color = CGColorCreate(cgColorSpace, components);
     CGColorSpaceRelease(cgColorSpace);
@@ -317,7 +317,7 @@ MNLColorSpace MNLColorSpaceForCGColorSpaceName(CFStringRef);
         CGColorSpaceRelease(cgColorSpace);
         return self = nil;
     }
-    CGFloat components[] = {(CGFloat)red / 255, (CGFloat)green / 255, (CGFloat)blue / 255, alpha};
+    CGFloat components[] = {red / (CGFloat)255, green / (CGFloat)255, blue / (CGFloat)255, alpha};
     if (self = [super init])
         _color = CGColorCreate(cgColorSpace, components);
     CGColorSpaceRelease(cgColorSpace);
