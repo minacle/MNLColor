@@ -19,6 +19,9 @@
 		661C93E221390546005FEA7B /* MNLIOSColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 669371D72135D8CB00A1CD5D /* MNLIOSColorPalette.m */; };
 		661C93E321390546005FEA7B /* MNLMacOSColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 669371DA2135EBDC00A1CD5D /* MNLMacOSColorPalette.m */; };
 		661C93E421390546005FEA7B /* MNLWatchOSColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 669371DC2135F1B200A1CD5D /* MNLWatchOSColorPalette.m */; };
+		6633C7D4213FC70A0004F083 /* MNLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6633C7D3213FC70A0004F083 /* MNLColor.swift */; };
+		6633C7D5213FC70A0004F083 /* MNLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6633C7D3213FC70A0004F083 /* MNLColor.swift */; };
+		6633C7D6213FC70A0004F083 /* MNLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6633C7D3213FC70A0004F083 /* MNLColor.swift */; };
 		6637F205213791320013BE4E /* MNL3BitColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 6637F204213791320013BE4E /* MNL3BitColorPalette.m */; };
 		6637F206213791320013BE4E /* MNL3BitColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 6637F204213791320013BE4E /* MNL3BitColorPalette.m */; };
 		669371D221357FAD00A1CD5D /* MNLColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 669371D121357F7A00A1CD5D /* MNLColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +47,8 @@
 /* Begin PBXFileReference section */
 		661468082136F72F00EC4009 /* MNLColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNLColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		661C93D6213904B1005FEA7B /* libMNLColor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMNLColor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6633C7D2213FC7090004F083 /* MNLColor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MNLColor-Bridging-Header.h"; sourceTree = "<group>"; };
+		6633C7D3213FC70A0004F083 /* MNLColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNLColor.swift; sourceTree = "<group>"; };
 		6637F204213791320013BE4E /* MNL3BitColorPalette.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNL3BitColorPalette.m; sourceTree = "<group>"; };
 		669371C821357EC800A1CD5D /* MNLColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNLColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		669371D121357F7A00A1CD5D /* MNLColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNLColor.h; sourceTree = "<group>"; };
@@ -109,6 +114,8 @@
 				669371D72135D8CB00A1CD5D /* MNLIOSColorPalette.m */,
 				669371DA2135EBDC00A1CD5D /* MNLMacOSColorPalette.m */,
 				669371DC2135F1B200A1CD5D /* MNLWatchOSColorPalette.m */,
+				6633C7D2213FC7090004F083 /* MNLColor-Bridging-Header.h */,
+				6633C7D3213FC70A0004F083 /* MNLColor.swift */,
 			);
 			name = MNLColor;
 			sourceTree = "<group>";
@@ -199,12 +206,15 @@
 				TargetAttributes = {
 					661468072136F72F00EC4009 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 0940;
 					};
 					661C93D5213904B1005FEA7B = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 0940;
 					};
 					669371C721357EC800A1CD5D = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -254,6 +264,7 @@
 				661468102136F83500EC4009 /* MNLColor.m in Sources */,
 				6637F206213791320013BE4E /* MNL3BitColorPalette.m in Sources */,
 				661468112136F83500EC4009 /* MNLColorPalette.m in Sources */,
+				6633C7D5213FC70A0004F083 /* MNLColor.swift in Sources */,
 				661468142136F83500EC4009 /* MNLWatchOSColorPalette.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +278,7 @@
 				661C93DF21390546005FEA7B /* MNLColor.m in Sources */,
 				661C93E421390546005FEA7B /* MNLWatchOSColorPalette.m in Sources */,
 				661C93E021390546005FEA7B /* MNLColorPalette.m in Sources */,
+				6633C7D6213FC70A0004F083 /* MNLColor.swift in Sources */,
 				661C93E221390546005FEA7B /* MNLIOSColorPalette.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +292,7 @@
 				669371D42135802600A1CD5D /* MNLColor.m in Sources */,
 				6637F205213791320013BE4E /* MNL3BitColorPalette.m in Sources */,
 				669371D62135D54F00A1CD5D /* MNLColorPalette.m in Sources */,
+				6633C7D4213FC70A0004F083 /* MNLColor.swift in Sources */,
 				669371DD2135F1B200A1CD5D /* MNLWatchOSColorPalette.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +369,8 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
@@ -422,6 +437,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
@@ -478,6 +494,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -485,6 +506,9 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -535,12 +559,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -637,6 +668,8 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -702,6 +735,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSION_INFO_PREFIX = "";
