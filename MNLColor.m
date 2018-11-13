@@ -135,7 +135,7 @@ MNLColorSpace MNLColorSpaceForCGColorSpaceName(CFStringRef);
 }
 
 - (CGColorRef)CGColor {
-    return CGColorCreateCopy(_color);
+    return _color;
 }
 
 - (BOOL)isMonochrome {
@@ -535,7 +535,7 @@ MNLColorSpace MNLColorSpaceForCGColorSpaceName(CFStringRef);
 
 - (instancetype)initWithUIColor:(UIColor *)uiColor {
     if (self = [super init])
-        _color = [uiColor CGColor];
+        _color = CGColorCreateCopy([uiColor CGColor]);
     return self;
 }
 
@@ -553,12 +553,12 @@ MNLColorSpace MNLColorSpaceForCGColorSpaceName(CFStringRef);
 }
 
 - (NSColor *)NSColor {
-    return [NSColor colorWithCGColor:_color];
+    return [NSColor colorWithCGColor:color];
 }
 
 - (instancetype )initWithNSColor:(NSColor *)nsColor {
     if (self = [super init])
-        _color = [nsColor CGColor];
+        _color = CGColorCreateCopy([nsColor CGColor]);
     return self;
 }
 
