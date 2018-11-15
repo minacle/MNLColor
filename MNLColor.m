@@ -499,6 +499,13 @@ MNLColorSpace MNLColorSpaceForCGColorSpaceName(CFStringRef);
     return YES;
 }
 
+- (instancetype)colorWithAlpha:(CGFloat)alpha {
+    CGColorRef cgColor = CGColorCreateCopyWithAlpha(_color, alpha);
+    id color = [[[self class] alloc] initWithCGColor:cgColor];
+    CGColorRelease(cgColor);
+    return color;
+}
+
 @end
 
 

@@ -122,6 +122,7 @@ typedef struct {
 - (BOOL)monochromeColorComponents:(MNLMonochromeColorComponents *_Nonnull)components;
 - (BOOL)RGBColorComponents:(MNLRGBColorComponents *_Nonnull)components;
 - (BOOL)CMYKColorComponents:(MNLCMYKColorComponents *_Nonnull)components;
+- (instancetype _Nonnull)colorWithAlpha:(CGFloat)alpha;
 
 @end
 
