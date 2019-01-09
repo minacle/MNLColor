@@ -13,15 +13,8 @@
 		661468132136F83500EC4009 /* MNLMacOSColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 669371DA2135EBDC00A1CD5D /* MNLMacOSColorPalette.m */; };
 		661468142136F83500EC4009 /* MNLWatchOSColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 669371DC2135F1B200A1CD5D /* MNLWatchOSColorPalette.m */; };
 		661468152136F83700EC4009 /* MNLColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 669371D121357F7A00A1CD5D /* MNLColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		661C93DF21390546005FEA7B /* MNLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 669371D32135802600A1CD5D /* MNLColor.m */; };
-		661C93E021390546005FEA7B /* MNLColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 669371D52135D54F00A1CD5D /* MNLColorPalette.m */; };
-		661C93E121390546005FEA7B /* MNL3BitColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 6637F204213791320013BE4E /* MNL3BitColorPalette.m */; };
-		661C93E221390546005FEA7B /* MNLIOSColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 669371D72135D8CB00A1CD5D /* MNLIOSColorPalette.m */; };
-		661C93E321390546005FEA7B /* MNLMacOSColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 669371DA2135EBDC00A1CD5D /* MNLMacOSColorPalette.m */; };
-		661C93E421390546005FEA7B /* MNLWatchOSColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 669371DC2135F1B200A1CD5D /* MNLWatchOSColorPalette.m */; };
 		6633C7D4213FC70A0004F083 /* MNLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6633C7D3213FC70A0004F083 /* MNLColor.swift */; };
 		6633C7D5213FC70A0004F083 /* MNLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6633C7D3213FC70A0004F083 /* MNLColor.swift */; };
-		6633C7D6213FC70A0004F083 /* MNLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6633C7D3213FC70A0004F083 /* MNLColor.swift */; };
 		6637F205213791320013BE4E /* MNL3BitColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 6637F204213791320013BE4E /* MNL3BitColorPalette.m */; };
 		6637F206213791320013BE4E /* MNL3BitColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 6637F204213791320013BE4E /* MNL3BitColorPalette.m */; };
 		669371D221357FAD00A1CD5D /* MNLColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 669371D121357F7A00A1CD5D /* MNLColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,22 +25,8 @@
 		669371DD2135F1B200A1CD5D /* MNLWatchOSColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 669371DC2135F1B200A1CD5D /* MNLWatchOSColorPalette.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		661C93D4213904B1005FEA7B /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		661468082136F72F00EC4009 /* MNLColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNLColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		661C93D6213904B1005FEA7B /* libMNLColor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMNLColor.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6633C7D2213FC7090004F083 /* MNLColor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MNLColor-Bridging-Header.h"; sourceTree = "<group>"; };
 		6633C7D3213FC70A0004F083 /* MNLColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNLColor.swift; sourceTree = "<group>"; };
 		6637F204213791320013BE4E /* MNL3BitColorPalette.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNL3BitColorPalette.m; sourceTree = "<group>"; };
 		669371C821357EC800A1CD5D /* MNLColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNLColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,13 +41,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		661468052136F72F00EC4009 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		661C93D3213904B1005FEA7B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,7 +70,6 @@
 			children = (
 				669371C821357EC800A1CD5D /* MNLColor.framework */,
 				661468082136F72F00EC4009 /* MNLColor.framework */,
-				661C93D6213904B1005FEA7B /* libMNLColor.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,7 +85,6 @@
 				669371D72135D8CB00A1CD5D /* MNLIOSColorPalette.m */,
 				669371DA2135EBDC00A1CD5D /* MNLMacOSColorPalette.m */,
 				669371DC2135F1B200A1CD5D /* MNLWatchOSColorPalette.m */,
-				6633C7D2213FC7090004F083 /* MNLColor-Bridging-Header.h */,
 				6633C7D3213FC70A0004F083 /* MNLColor.swift */,
 			);
 			name = MNLColor;
@@ -160,23 +130,6 @@
 			productReference = 661468082136F72F00EC4009 /* MNLColor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		661C93D5213904B1005FEA7B /* MNLColor.iOS.Static */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 661C93DC213904B1005FEA7B /* Build configuration list for PBXNativeTarget "MNLColor.iOS.Static" */;
-			buildPhases = (
-				661C93D2213904B1005FEA7B /* Sources */,
-				661C93D3213904B1005FEA7B /* Frameworks */,
-				661C93D4213904B1005FEA7B /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MNLColor.iOS.Static;
-			productName = MNLColor;
-			productReference = 661C93D6213904B1005FEA7B /* libMNLColor.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		669371C721357EC800A1CD5D /* MNLColor.iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 669371CE21357EC800A1CD5D /* Build configuration list for PBXNativeTarget "MNLColor.iOS" */;
@@ -202,13 +155,9 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 				TargetAttributes = {
 					661468072136F72F00EC4009 = {
-						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 0940;
-					};
-					661C93D5213904B1005FEA7B = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 0940;
 					};
@@ -232,7 +181,6 @@
 			targets = (
 				669371C721357EC800A1CD5D /* MNLColor.iOS */,
 				661468072136F72F00EC4009 /* MNLColor.macOS */,
-				661C93D5213904B1005FEA7B /* MNLColor.iOS.Static */,
 			);
 		};
 /* End PBXProject section */
@@ -266,20 +214,6 @@
 				661468112136F83500EC4009 /* MNLColorPalette.m in Sources */,
 				6633C7D5213FC70A0004F083 /* MNLColor.swift in Sources */,
 				661468142136F83500EC4009 /* MNLWatchOSColorPalette.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		661C93D2213904B1005FEA7B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				661C93E321390546005FEA7B /* MNLMacOSColorPalette.m in Sources */,
-				661C93E121390546005FEA7B /* MNL3BitColorPalette.m in Sources */,
-				661C93DF21390546005FEA7B /* MNLColor.m in Sources */,
-				661C93E421390546005FEA7B /* MNLWatchOSColorPalette.m in Sources */,
-				661C93E021390546005FEA7B /* MNLColorPalette.m in Sources */,
-				6633C7D6213FC70A0004F083 /* MNLColor.swift in Sources */,
-				661C93E221390546005FEA7B /* MNLIOSColorPalette.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,11 +267,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -363,14 +298,16 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.minacle.dl.macos.color;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
@@ -408,11 +345,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -432,148 +370,15 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.minacle.dl.macos.color;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		661C93DD213904B1005FEA7B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		661C93DE213904B1005FEA7B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -633,11 +438,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -662,14 +468,16 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.minacle.dl.ios.color;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -707,11 +515,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -730,12 +539,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.minacle.dl.ios.color;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSION_INFO_PREFIX = "";
@@ -750,15 +561,6 @@
 			buildConfigurations = (
 				6614680E2136F72F00EC4009 /* Debug */,
 				6614680F2136F72F00EC4009 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		661C93DC213904B1005FEA7B /* Build configuration list for PBXNativeTarget "MNLColor.iOS.Static" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				661C93DD213904B1005FEA7B /* Debug */,
-				661C93DE213904B1005FEA7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
