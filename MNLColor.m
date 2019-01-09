@@ -560,7 +560,7 @@ MNLColorSpace MNLColorSpaceForCGColorSpaceName(CFStringRef);
 }
 
 - (NSColor *)NSColor {
-    return [NSColor colorWithCGColor:color];
+    return [NSColor colorWithCGColor:_color];
 }
 
 - (instancetype )initWithNSColor:(NSColor *)nsColor {
