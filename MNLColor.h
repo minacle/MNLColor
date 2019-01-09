@@ -183,7 +183,7 @@ typedef struct {
 #pragma mark -
 
 /// @brief
-///  An abstract class for color palettes.
+///  A class for color palettes.
 /// @details
 ///  You can instantinate this class to get dynamic color palette.
 @interface MNLColorPalette : NSObject <NSCopying, NSMutableCopying, NSFastEnumeration, NSSecureCoding>
