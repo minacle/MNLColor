@@ -80,7 +80,7 @@ static MNLColor *MNLMacOSYellowColor;
 }
 
 + (MNLColor *)brownColor {
-    MNLReturnSingletonColor([[MNLColor alloc] initWithHexadecimalRed:162 green:132 blue:94 colorSpace:MNLColorSpaceSRGB], MNLMacOSBlueColor);
+    MNLReturnSingletonColor([[MNLColor alloc] initWithHexadecimalRed:162 green:132 blue:94 colorSpace:MNLColorSpaceSRGB], MNLMacOSBrownColor);
 }
 
 + (MNLColor *)grayColor {
